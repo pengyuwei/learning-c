@@ -1,3 +1,5 @@
+autom4te.cache
+autoscan.log
 .vs
 # Prerequisites
 *.d
