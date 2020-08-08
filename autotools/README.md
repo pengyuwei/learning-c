@@ -6,6 +6,8 @@
 sh make.sh
 ./configure
 make
+make check
+make distcheck
 make clean
 sh clean.sh
 ```
