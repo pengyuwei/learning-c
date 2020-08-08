@@ -12,11 +12,10 @@ make clean
 sh clean.sh
 ```
 
-## 坑
+## key
 
-```
-Makefile.am中，必须使用TAB缩进而不能使用空格缩进
-```
+* Makefile.am中，必须使用TAB缩进而不能使用空格缩进
+* 源代码默认位于src目录中
 
 ## 基础环境
 

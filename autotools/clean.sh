@@ -2,7 +2,7 @@ rm -f *.o
 rm -f main
 rm -f Makefile
 rm -f Makefile.in
-rm -f a.out
+rm -f *.out
 rm -f AUTHORS
 rm -f COPYING
 rm -f ChangeLog
@@ -20,6 +20,6 @@ rm -f depcomp
 rm -f install-sh
 rm -f missing
 rm -f autoscan.log
-rm -rf main.dSYM
+rm -rf main.out.dSYM
 rm -rf autom4te.cache
 rm -rf .deps
