@@ -1,5 +1,7 @@
 .DEFAULT_GOAL := all
 
+CFLAGS=-std=c++11:w
+
 thread :  thread.c
 	c++ thread.c -o thread -lpthread
 
