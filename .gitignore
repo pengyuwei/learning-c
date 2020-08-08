@@ -2,7 +2,7 @@ autom4te.cache
 autoscan.log
 main
 Makefile.in
-a.out
+*.out
 AUTHORS
 COPYING
 ChangeLog

@@ -13,8 +13,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: configure
-      run: ./configure
+    - name: autotools
+      run: cd autotools;sh ./make.sh;sh clean.sh;cd ..;
     - name: make
       run: make
     # - name: make check

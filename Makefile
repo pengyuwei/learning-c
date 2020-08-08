@@ -3,10 +3,10 @@
 CFLAGS=-std=c++11:w
 
 thread :  thread.c
-	c++ thread.c -o thread -lpthread
+	c++ thread.c -o thread.out -lpthread
 
 clang : clang.c
-	c++ clang.c -o main
+	c++ clang.c -o main.out
 
 .PHONY : all
 all : thread clang
