@@ -4,17 +4,17 @@
 
 ## 目录说明
 
-* autotools: 包含autoconf和automake的用法示例
-* C: 使用gcc编译的C语言基础学习代码
-    * [dynamic_link](dynamic_link): 动态链接
-    * static_link: 静态链接
-    * tunjinkaotang: “屯斤拷烫”这个梗的来源演示。
-* CPP: 使用g++编译的C++语言基础学习代码
-    * dynamic_link: C++调用C的动态链接库
-    * static_link: C++静态链接C的导出库
-    * thread: C++多线程、多进程
+* [autotools](autotools): 包含autoconf和automake的用法示例
+* [C](C): 使用gcc编译的C语言基础学习代码
+    * [dynamic_link](C/dynamic_link): 动态链接
+    * [static_link](C/static_link): 静态链接
+    * [tunjinkaotang](C/tunjinkaotang): “屯斤拷烫”这个梗的来源演示。
+* [CPP](CPP): 使用g++编译的C++语言基础学习代码
+    * [dynamic_link](CPP/dynamic_link): C++调用C的动态链接库
+    * [static_link](CPP/static_link): C++静态链接C的导出库
+    * [thread](CPP/thread): C++多线程、多进程
     * stl: C++ STL库
-    * 11: C++ 11特性
+    * [11](CPP/11): C++ 11特性
 
 ## 基础环境
 
