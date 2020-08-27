@@ -12,10 +12,10 @@ make clean
 sh clean.sh
 ```
 
-## key
+## 注意点
 
 * Makefile.am中，必须使用TAB缩进而不能使用空格缩进
-* 源代码默认位于src目录中
+* 源代码一般默认位于src目录中
 
 ## 基础环境
 
@@ -119,7 +119,7 @@ clean:
 	rm -f main
 	rm -f thread
 	rm -f a.out
-    rm -f AUTHORS
+	rm -f AUTHORS
 	rm -f COPYING
 	rm -f ChangeLog
 	rm -f INSTALL
