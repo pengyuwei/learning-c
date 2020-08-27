@@ -20,11 +20,12 @@ jobs:
     - name: C
       run: cd C;make;make clean;cd ..;
     - name: CPP
-      run: cd CPP;make;make clean;
-      cd thread;make;make clean;cd ..;
-      cd dynamic_link;make;make clean;cd ..;
-      cd static_link;make;make clean;cd ..;
-      cd 11;make;make clean;cd ..;
+      run: |
+        cd CPP;make;make clean;
+        cd thread;make;make clean;cd ..;
+        cd dynamic_link;make;make clean;cd ..;
+        cd static_link;make;make clean;cd ..;
+        cd 11;make;make clean;cd ..;
     # - name: make check
     #   run: make check
     # - name: make distcheck
