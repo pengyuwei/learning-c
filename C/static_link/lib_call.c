@@ -9,8 +9,11 @@ gcc -o sosample call_so.c -L -lso
 */
 int main(void)
 {
-    int ret = lib_func(0);
-    printf("%d\n", ret);
+    int ret = 0;
+    char str[256] = {0};
+
+    ret = lib_func(str);
+    printf("%s, return %d\n", str, ret);
 
     return 0;
 }

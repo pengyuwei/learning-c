@@ -1,6 +1,6 @@
 #ifndef _LIB_H_
 #define _LIB_H_
 
-int lib_func(int param);
+int lib_func(char *param);
 
 #endif

@@ -1,5 +1,6 @@
 #include "lib.h"
 /*
+C++示例
 -shared: 要编译动态链接库
 -fPIC: 编译生成的代码与位置无关
 gcc -Wall -g -fPIC -c so.c -o so.o
