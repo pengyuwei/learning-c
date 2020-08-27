@@ -6,7 +6,7 @@
 
 * autotools: 包含autoconf和automake的用法示例
 * C: 使用gcc编译的C语言基础学习代码
-    * dynamic_link: 动态链接
+    * [dynamic_link](dynamic_link): 动态链接
     * static_link: 静态链接
     * tunjinkaotang: “屯斤拷烫”这个梗的来源演示。
 * CPP: 使用g++编译的C++语言基础学习代码
