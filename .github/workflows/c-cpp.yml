@@ -14,7 +14,10 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: C
-      run: cd C;make all;make clean;cd ..;
+      run: |
+        cd C;make all;make clean;
+        cd scope;make all;make clean;
+        cd ..;
     - name: CPP
       run: |
         cd CPP;make;make clean;
