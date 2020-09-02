@@ -16,8 +16,8 @@ jobs:
     - name: C
       run: |
         cd C;make all;make clean;
-        cd scope;make all;make clean;
-        cd ..;
+        cd scope;make all;make clean;cd ..;
+        cd socket;make all;make clean;cd ..;
     - name: CPP
       run: |
         cd CPP;make;make clean;

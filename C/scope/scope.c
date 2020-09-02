@@ -9,8 +9,8 @@ extern int extern_0_var;
 extern char extern_array[];
 
 // 要么在文件顶部声明函数，要么把函数放在调用者的上面的位置
-// check_extern_0_var()：在顶部声明，调用者可以位于函数下方
-// check_extern_var()：不做声明，但函数在调用者的上方
+// check_extern_0_var()：在顶部声明，函数可以位于调用者下方
+// check_extern_var()：不做声明，但函数需要放置在调用者的上方
 void check_extern_0_var();
 
 void print_vars()
