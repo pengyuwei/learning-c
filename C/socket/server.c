@@ -1,9 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include <sys/socket.h>
 #include <unistd.h> // for close
-#include <stdlib.h>
 #include <arpa/inet.h>
-#include <string.h>
 
 int init_server(void)
 {
@@ -23,7 +23,7 @@ int init_server(void)
     2. bind
     3. listen
     4. accept
-    5. close: client_fd && listen fd 
+    5. close: client_fd && listen fd
     */
     listen_fd = socket(server_addr.sin_family, type, 0);
     if (listen_fd < 0) {
@@ -44,10 +44,11 @@ int init_server(void)
 
     printf("Server: waiting for connections...\n");
 
-    
     while(1) {  // main accept() loop
         struct sockaddr client_addr;
-        socklen_t client_addr_len;
+        socklen_t client_addr_len = sizeof(client_addr);
+        memset(&client_addr, 0, sizeof(client_addr));
+
         int client_fd = accept(listen_fd, (struct sockaddr *)&client_addr, &client_addr_len);
         if (client_fd == -1) {
             perror("accept");
@@ -58,11 +59,15 @@ int init_server(void)
             close(listen_fd); // child doesn't need the listener
 
             struct sockaddr_in *pclient = (struct sockaddr_in *)&client_addr;
-            printf("connected %u:%u\n", pclient->sin_addr.s_addr, ntohs(pclient->sin_port));
+            printf("connected %s:%u\n", 
+                inet_ntoa(pclient->sin_addr), 
+                ntohs(pclient->sin_port));
             if (send(client_fd, "Hello, world!", 13, 0) == -1) {
                 perror("send");
             }
-            printf("closed %u:%u\n", pclient->sin_addr.s_addr, ntohs(pclient->sin_port));
+            printf("closed %s:%u\n", 
+                inet_ntoa(pclient->sin_addr), 
+                ntohs(pclient->sin_port));
             close(client_fd);
             exit(0);
         }
