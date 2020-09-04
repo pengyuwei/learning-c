@@ -33,6 +33,12 @@ brew install g++
 brew install gdb
 ```
 
+FreeBSD 13
+```
+pkg install gcc
+pkg install gdb
+```
+
 ## 常用命令
 
 Ubuntu
