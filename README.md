@@ -19,7 +19,7 @@
     * [11](CPP/11): C++ 11特性
     * 20: C++ 20特性
 
-## 基础环境
+## 编译环境
 
 Ubuntu
 ```
@@ -33,7 +33,7 @@ brew install g++
 brew install gdb
 ```
 
-FreeBSD 13
+FreeBSD
 ```
 pkg install gcc
 pkg install gdb

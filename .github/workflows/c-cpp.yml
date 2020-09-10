@@ -15,7 +15,8 @@ jobs:
     - uses: actions/checkout@v2
     - name: C
       run: |
-        cd C;make all;make clean;
+        cd C;
+        cd base;make all;make clean;cd ..;
         cd scope;make all;make clean;cd ..;
         cd socket;make all;make clean;cd ..;
     - name: CPP

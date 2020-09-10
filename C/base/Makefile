@@ -1,22 +1,20 @@
 .DEFAULT_GOAL := all
 
-CFLAGS=-std=c++11
+CC = gcc
+CFLAGS = -Wall -g
 
-thread :  thread.c
-	c++ thread.c -o thread.out -lpthread
-
-clang : clang.c
-	c++ clang.c -o main.out
-
-base : base.c
-	$(CC) base.c -o base.out
+base : base.c heap.c stack.c
+	$(CC) $(CFLAGS) base.c -o base.out
+	$(CC) $(CFLAGS) heap.c -o heap.out
+	$(CC) $(CFLAGS) stack.c -o stack.out
 	
 .PHONY : all
-all : thread clang base
+all : base
 
 clean:
 	@rm -f *.o
 	@rm -f *.out
+	@rm -rf *.out.*
 	@rm -f AUTHORS
 	@rm -f COPYING
 	@rm -f ChangeLog
