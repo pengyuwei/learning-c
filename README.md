@@ -6,12 +6,14 @@
 
 * [autotools](autotools): 包含autoconf和automake的用法示例
 * [C](C): 使用gcc编译的C语言基础学习代码
+    * [base](C/base)：C语言基础(堆、栈、结构体)
     * [dynamic_link](C/dynamic_link): 动态链接
     * [static_link](C/static_link): 静态链接
     * [scope](C/scope): 变量作用域
-    * [socket](C/socket): Socket通讯相关
+    * [socket](C/socket): Socket通讯、进程间通讯、共享内存通讯
     * [tunjinkaotang](C/tunjinkaotang): “屯斤拷烫”这个梗的来源演示。
 * [CPP](CPP): 使用g++编译的C++语言基础学习代码
+    * [class](CPP/class)：类(类、继承、重载、多态)
     * [dynamic_link](CPP/dynamic_link): C++调用C的动态链接库
     * [static_link](CPP/static_link): C++静态链接C的导出库
     * [thread](CPP/thread): C++多线程、多进程
