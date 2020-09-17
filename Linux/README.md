@@ -1,3 +1,7 @@
+## 编译
+
+Mac不支持epoll，请在Linux编译;
+
 # [epoll](https://zh.wikipedia.org/wiki/Epoll)
 
 ```维基百科
