@@ -5,9 +5,9 @@
 #include <arpa/inet.h>
 #include <sys/epoll.h>
 
-#define MAXSIZE     1024
-#define LISTENQ     5
-#define FDSIZE      1000
+#define MAXSIZE 1024
+#define LISTENQ 5
+#define FDSIZE 1000
 #define EPOLLEVENTS 100
 
 static void do_accpet(int epoll_fd, int listen_fd);
