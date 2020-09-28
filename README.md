@@ -24,6 +24,7 @@
     * epoll
     * lock-free
 * [FreeBSD](FreeBSD)：FreeBSD系统特性
+    * kqueue
 
 ## 编译环境
 
