@@ -25,15 +25,17 @@ jobs:
         cd thread;make;make clean;cd ..;
         cd dynamic_link;make;make clean;cd ..;
         cd static_link;make;make clean;cd ..;
-        cd 11;make;make clean;cd ..;
+        cd new;make;make clean;cd ..;
+        cd stl;make;make clean;cd ..;
     - name: Linux
       run: |
         cd Linux;make all;make clean;
         cd ..;
-    - name: FreeBSD
-      run: |
-        cd FreeBSD;make;make clean;
-        cd ..;
+    # Github action is Linux env
+    # - name: FreeBSD
+    #   run: |
+    #     cd FreeBSD;make;make clean;
+    #     cd ..;
     - name: autotools
       run: cd autotools;sh ./make.sh;sh clean.sh;cd ..;
     # - name: make check
