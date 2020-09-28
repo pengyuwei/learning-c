@@ -3,11 +3,11 @@
 CC = gcc
 CFLAGS = -Wall -g
 
-kevent: kevent.c
-	$(CC) $(CFLAGS) kevent.c -o kevent.out
+kqueue: kqueue.c
+	$(CC) $(CFLAGS) kqueue.c -o kqueue.out
 
 .PHONY : all
-all : kevent
+all : kqueue
 
 clean:
 	@rm -f *.out

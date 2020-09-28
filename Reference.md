@@ -10,6 +10,7 @@
 * [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsuses)
 * [Beej's Guide to Network Programming](https://beej.us/guide/bgnet/html/)
 * [Autotools Tutorial](https://www.lrde.epita.fr/~adl/autotools.html)
+* [kqueue](https://www.freebsd.org/cgi/man.cgi?kqueue)
 * [C/C++ 静态链接库(.a) 与 动态链接库(.so)](https://www.cnblogs.com/52php/p/5681711.html)
 * [Linux C/C++ 动态链接库的生成和调用](https://blog.csdn.net/alex_bean/article/details/83792988)
 * [C/C++ 的编译和链接的问题](https://zhuanlan.zhihu.com/p/26643194)

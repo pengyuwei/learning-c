@@ -1,6 +1,7 @@
 # learning-c
 
-转型产品经理之后，有6年没写过 C 代码了，本项目是对 C 和 C++ 的复习。
+转型产品经理之后，有6年没写过 C 代码了，本项目是对 C 和 C++ 的复习，不适合用于语言入门。
+如果对你有帮助，请帮点Star。
 
 ## 目录说明
 
@@ -17,9 +18,8 @@
     * [dynamic_link](CPP/dynamic_link): C++调用C的动态链接库
     * [static_link](CPP/static_link): C++静态链接C的导出库
     * [thread](CPP/thread): C++多线程、多进程
-    * stl: C++ STL库
-    * [11](CPP/11): C++ 11特性
-    * 20: C++ 20特性
+    * [stl](CPP/stl): C++ STL库
+    * [new]](CPP/new): C++语言新特性（v11-20）
 * [Linux](Linux)：Linux系统特性（POSIX）
     * epoll
     * lock-free
