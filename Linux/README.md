@@ -1,3 +1,8 @@
+## 清单
+
+- curses.c：Linux的终端界面库
+- epoll.c：Linux的可扩展I/O事件通知机制epoll模型
+
 ## 编译
 
 Mac不支持epoll，请在Linux编译;
@@ -55,3 +60,4 @@ read 或者 write 系统调用返回了 EAGAIN。
 * [kqueue](https://zh.wikipedia.org/wiki/Kqueue)
 * [libevent](https://zh.wikipedia.org/wiki/Libevent)
 * [I/O Completion Ports](https://zh.wikipedia.org/wiki/IOCP)
+* [newwin](https://linux.die.net/man/3/newwin)
