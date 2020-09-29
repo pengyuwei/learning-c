@@ -21,7 +21,7 @@ Win win[3] = {
   {60, 17, 20, 8, "R2", "", NULL}, 
 };
 
-// len(string) * 8
+// len(string) * sizeof(chtype)
 char scr_string[640] = {0};
 #define CH(s) str2chtype(s)
 

@@ -19,7 +19,7 @@
     * [static_link](CPP/static_link): C++静态链接C的导出库
     * [thread](CPP/thread): C++多线程、多进程
     * [stl](CPP/stl): C++ STL库
-    * [new]](CPP/new): C++语言新特性（v11-20）
+    * [new](CPP/new): C++语言新特性（v11-20）
 * [Linux](Linux)：Linux系统特性（POSIX）
     * epoll
     * lock-free
