@@ -23,6 +23,7 @@
 * [Linux](Linux)：Linux系统特性（POSIX）
     * epoll
     * lock-free
+    * curses
 * [FreeBSD](FreeBSD)：FreeBSD系统特性
     * kqueue
 
