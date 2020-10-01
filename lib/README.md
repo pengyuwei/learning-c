@@ -13,6 +13,8 @@ Mac
 1. 拷贝到：/Library/Frameworks/SDL2.framework/
 1. cd /Library/Frameworks/SDL2.framework/;
 1. codesign -f -s - SDL2
+1. sdl2-config --cflags --libs
+
 
 其他系统见官方文档
 

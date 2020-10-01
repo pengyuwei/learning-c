@@ -1,10 +1,12 @@
 .DEFAULT_GOAL := all
 
 CXX = g++
-CFLAGS = -WALL -g -O0 -v
+CFLAGS = -Wall -g -O0 -v
+SDLI = -I/usr/local/include/SDL2 -D_THREAD_SAFE
+SDLL = -L/usr/local/lib -lSDL2
 
 main : sdl.cpp
-	$(CXX) sdl.cpp -o sdl.out
+	$(CXX) $(CFLAGS) $(SDLI) $(SDLL) sdl.cpp -o sdl.out
 
 .PHONY : all
 all : main
