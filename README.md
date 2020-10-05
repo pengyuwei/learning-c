@@ -49,12 +49,26 @@ pkg install gcc
 pkg install gdb
 ```
 
+编译器版本
+```
+% gcc --version
+Apple clang version 11.0.3 (clang-1103.0.32.62)
+% c++ --version
+Apple clang version 11.0.3 (clang-1103.0.32.62)
+```
+
+其他扩展环境：
+```
+sudo apt install clang-tidy
+```
+
 ## 常用命令
 
 Ubuntu
 ```
 ldd libso.so
 strace
+clang-tidy -list-checks
 ```
 
 MacOS
