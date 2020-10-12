@@ -9,8 +9,11 @@ epoll: epoll.c
 curses: curses.c
 	$(CC) $(CFLAGS) curses.c -lncurses -I/usr/include/ncurses -o curses.out
 
+other: readline.c
+	$(CC) readline.c -lreadline -o readline.out
+
 .PHONY : all
-all : epoll curses
+all : epoll curses other
 
 clean:
 	@rm -f *.out
