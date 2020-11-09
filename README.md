@@ -1,6 +1,6 @@
 # learning-c
 
-转型产品经理之后，有6年没写过 C 代码了，本项目是对 C 和 C++ 的复习，不适合用于语言入门。
+本项目是对 C 和 C++ 的复习，不适合用于语言入门。
 如果对你有帮助，请帮点Star。
 
 ## 目录说明
@@ -22,6 +22,7 @@
     * [new](CPP/new): C++语言新特性（v11-20）
 * [lib](lib)：一些库
     * [sdl](lib/sdl): C++ SDL图形库
+* [gui](gui/)：图形界面技术
 * [Linux](Linux)：Linux系统特性（POSIX）
     * epoll
     * lock-free

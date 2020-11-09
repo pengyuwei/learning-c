@@ -61,6 +61,7 @@ main.dSYM
 *.i*86
 *.x86_64
 *.hex
+lib/sdl/win/win/Debug/*
 
 # Debug files
 *.dSYM/
