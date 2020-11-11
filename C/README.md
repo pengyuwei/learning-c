@@ -1,11 +1,5 @@
 # C
 
-## 目录结构
-
-* dynamic_link: 动态链接库示例
-* static_link: 静态链接库示例
-
-
 ## gcc(g++)编译选项
 
 * shared ：指定生成动态链接库。
