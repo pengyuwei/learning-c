@@ -14,10 +14,6 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: C
-      env:
-        sudo apt-get install -y build-essential module-assistant
-        sudo apt-get install -y gcc-multilib g++-multilib
-        sudo apt-get install -y libreadline-dev 
       run: |
         cd C;
         cd base;make all;make clean;cd ..;

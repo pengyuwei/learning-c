@@ -5,8 +5,8 @@
 
 /*
 Compile to 32-bit binary on a 64-bit system:
-sudo apt-get install build-essential module-assistant
-sudo apt-get install gcc-multilib g++-multilib
+sudo apt-get install -y build-essential module-assistant
+sudo apt-get install -y gcc-multilib g++-multilib
 gcc -m32 2038.c -o 2038.out
 */
 int main (int argc, char *argv[])

@@ -3,7 +3,7 @@
 #include "readline/readline.h"
 
 /*
-sudo apt-get install libreadline-dev 
+sudo apt-get install -y libreadline-dev
 gcc readline.c -lreadline -o readline.out
 */
 int main(int argc, char** argv)
