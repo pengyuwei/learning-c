@@ -1,6 +1,8 @@
 #include <stdio.h>
 #include <assert.h>
 
+/* IBM有个PL/I，语法比JOSS还糟糕，到处都见它踪影，实实在在是垃圾。JOSS是个老古董，它可不是因简单而闻名。 -- 程序员 */
+
 char gbuf[16] = {0};
 
 int func(int para)

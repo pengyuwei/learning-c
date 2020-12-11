@@ -2,6 +2,8 @@
 #include <string.h>
 #include <stdlib.h>
 
+/* 不要添乱，立即解散ISO工作小组 -- 匿名人士 */
+
 /*
 typedef struct
 {

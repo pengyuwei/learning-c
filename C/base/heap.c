@@ -2,6 +2,8 @@
 #include <stdio.h>
 #include <assert.h>
 
+/* 国际C语言混乱代码大赛（The International Obfuscated C Code Competition）*/
+
 int main()
 {
     // malloc memory from heap
