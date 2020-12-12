@@ -8,7 +8,7 @@
 #define KR_C
 // ANSI_C定义的特征
 #define ANSI_C
-#define WILL_ERROR //
+#define WILL_ERROR
 #define READ_ONLY const
 
 /*
@@ -60,13 +60,37 @@ void func_const(const int readonly) {
     const int num = 11;
     const int *p = &num;
     #ifdef ERROR_IS_RIGHT
+        // 不能通过 p 修改 num
         WILL_ERROR *p = 1;
     #endif
-    // 不能通过 p 修改 num ，但是p自己可以被改变：
+    // 但是p自己可以被改变：
     int i = 99;
     p = &i;
 
     printf("func_const::*p=%d, readonly=%d\n", *p, readonly);
+}
+
+void func_var() {
+    int i = -1;
+    unsigned long int uli = -1;
+    unsigned long long ull = -1;
+    unsigned long long int ulli = -1;
+    long double ld = -1.0;
+    char c1 = 'A';
+    unsigned char c2 = 'a';
+    printf("func_var::int[%zd]=%d\n", sizeof(i), i);
+    printf("func_var::unsigned long int[%zd]=%lu\n", sizeof(uli), uli);
+    printf("func_var::unsigned long long[%zd]=%llu(0x%llX)\n", sizeof(ull), ull, ull);
+    printf("func_var::unsigned long long int[%zd]=%llu\n", sizeof(ulli), ulli);
+    printf("func_var::long double[%zd]=%Lf\n", sizeof(ld), ld);
+    printf("func_var::char[%zd]=%c\n", sizeof(c1), c1);
+    printf("func_var::unsigned char[%zd]=%c\n", sizeof(c2), c2);
+
+    if (-1 < (unsigned char)-1) {
+        ANSI_C printf("ANSI C: %d\n", (unsigned char)-1);
+    } else {
+        KR_C printf("K&C C: %d\n", (unsigned char)-1);
+    }
 }
 
 int main(int argc, char *argv[])
@@ -90,9 +114,11 @@ int main(int argc, char *argv[])
     free(pinfo);
     pinfo = NULL;
 
-    // 3. const
+    // 3. const and var
     int var = 1;
     func_const(var);
+
+    func_var();
     
     // end
     return 0;

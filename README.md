@@ -1,11 +1,10 @@
 # learning-c
 
-本项目是对 C 和 C++ 的复习，不适合用于语言入门。
-如果对你有帮助，请帮点Star。
+本项目是对 C 和 C++ 的复习。
 
 ## 目录说明
 
-* [history](history)：C语言发展历史，和相关的人物
+* [history](history)：C语言发展简史，和相关的人物
 * [C](C): 使用gcc编译的C语言基础学习代码
     * [base](C/base)：C语言基础(堆、栈、结构体)
     * [dynamic_link](C/dynamic_link): 动态链接
@@ -13,7 +12,9 @@
     * [scope](C/scope): 变量作用域
     * [data_struct](C/data_struct): 数组、链表、堆栈、队列、哈希表、排序、字节顺序、位运算
     * [socket](C/socket): Socket通讯、进程间通讯、共享内存通讯
-    * [tunjinkaotang](C/tunjinkaotang): “屯斤拷烫”这个梗的来源演示。
+    * [woqu](C/woqu)
+        * [tunjinkaotang](C/basic/tunjinkaotang): “屯斤拷烫”这个梗的来源演示。
+        * [basic](C/woqu/basic)：1990年的国际混乱C大赛上，Diomides Spinellis用1500字节实现的BASIC语言解释器。
 * [CPP](CPP): 使用g++编译的C++语言基础学习代码
     * [class](CPP/class)：类(类、继承、重载、多态)
     * [dynamic_link](CPP/dynamic_link): C++调用C的动态链接库
@@ -37,7 +38,17 @@
     * MongoDB
 * [FreeBSD](FreeBSD)：FreeBSD系统特性
     * kqueue
-* [algorithm](algorithm): 算法。二分查找、二叉树、红黑树、B树、冒泡排序、快速排序、插入排序、归并排序、选择排序、A*寻路
+* [algorithm](algorithm): 算法:
+[二叉树](https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%8F%89%E6%A0%91)
+[二分查找](https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%88%86%E6%90%9C%E5%B0%8B%E6%BC%94%E7%AE%97%E6%B3%95)
+[红黑树](https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91)
+[B树](https://zh.wikipedia.org/wiki/B%E6%A0%91)
+[冒泡排序](https://zh.wikipedia.org/wiki/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F)
+[快速排序](https://zh.wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F)
+[插入排序](https://zh.wikipedia.org/wiki/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F)
+[归并排序](https://zh.wikipedia.org/wiki/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F)
+[选择排序](https://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F)
+[A*寻路](https://zh.wikipedia.org/wiki/A*%E6%90%9C%E5%B0%8B%E6%BC%94%E7%AE%97%E6%B3%95)
 
 ## 编译环境
 

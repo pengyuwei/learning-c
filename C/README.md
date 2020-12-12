@@ -1,5 +1,17 @@
 # C
 
+- [basic](basic)
+1990年的国际混乱C大赛上，Diomides Spinellis用1500字节实现的BASIC语言解释器。
+源代码地址：http://grail.cba.csuohio.edu/~somos/ddsbasic.c
+测试代码：http://grail.cba.csuohio.edu/~somos/LANDER.BAS
+运行：
+```
+gcc ddsbasic.c
+./a.out
+OLD LANDER.BAS
+RUN
+```
+
 ## gcc(g++)编译选项
 
 * shared ：指定生成动态链接库。
