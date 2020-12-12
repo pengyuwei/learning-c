@@ -86,10 +86,11 @@ void func_var() {
     printf("func_var::char[%zd]=%c\n", sizeof(c1), c1);
     printf("func_var::unsigned char[%zd]=%c\n", sizeof(c2), c2);
 
-    if (-1 < (unsigned char)-1) {
-        ANSI_C printf("ANSI C: %d\n", (unsigned char)-1);
+    if (-1 < (unsigned char)1) {
+        ANSI_C printf("ANSI C: %d\n", (unsigned char)1);
     } else {
-        KR_C printf("K&C C: %d\n", (unsigned char)-1);
+        // -1 自动转换为无符号数字
+        KR_C printf("K&C C: %d\n", (unsigned char)1);
     }
 }
 
