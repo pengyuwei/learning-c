@@ -16,3 +16,4 @@
 - Alan Snyder：C预处理器的倡议者。
 - Steve Bourne：贝尔实验室工作，采用C预处理器使C语言更像Algol-68，这种C语言变形促成了异想天开的国际C语言混乱代码大赛。
 - Steve Johnson：编写了可移植的C编译器pcc。
+- Richard Stallman：创立自由软件基金会（Free Software Foundation，FSF，gcc来源于此），提出GNU方案，，MIT的顶级黑客。

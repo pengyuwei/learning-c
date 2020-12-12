@@ -125,6 +125,7 @@ MacOS
 - [《C语言编程常见问题解答》](https://book.douban.com/subject/1247059/)，清华大学出版社
 - [《C专家编程》](https://book.douban.com/subject/2377310/)
 - [《TCP/IP详解》](https://book.douban.com/subject/1088054/)，机械工业出版社
+- [《The Elements of Programming Style》](https://book.douban.com/subject/1470267/)
 
 文章/帖子
 - [C/C++ 静态链接库(.a) 与 动态链接库(.so)](https://www.cnblogs.com/52php/p/5681711.html)

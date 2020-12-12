@@ -5,6 +5,8 @@
 #include <unistd.h> // for close
 #include <arpa/inet.h>
 
+/* 所有的缺陷可归于三类：不该做的做了；该做的没做；该做但做得不合适。  -- Peter Van Der Linden */
+
 int init_server(void)
 {
     struct sockaddr_in server_addr;
