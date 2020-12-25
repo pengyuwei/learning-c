@@ -52,7 +52,7 @@
 
 ## 编译环境
 
-Ubuntu
+Ubuntu Linux
 ```
 apt-get install build-essential
 ```
