@@ -7,7 +7,7 @@
 
 ## 编译
 
-Mac不支持epoll，请在Linux编译;
+macOS不支持epoll，请在Linux编译;
 
 # [epoll](https://zh.wikipedia.org/wiki/Epoll)
 

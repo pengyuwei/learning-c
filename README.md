@@ -21,7 +21,7 @@
     * [static_link](CPP/static_link): C++静态链接C的导出库
     * [thread](CPP/thread): C++多线程、多进程
     * [stl](CPP/stl): C++ STL标准库
-    * [new](CPP/new): C++语言新特性（v11-20）
+    * [whatsnew](CPP/whatsnew): C++语言新特性（v11-20）
 * [autotools](autotools): 包含autoconf和automake的用法示例
 * [lib](lib)：一些库
     * [sdl](lib/sdl): C++ SDL图形库
@@ -38,7 +38,7 @@
     * MongoDB
 * [FreeBSD](FreeBSD)：FreeBSD系统特性
     * kqueue
-* [algorithm](algorithm): 算法:
+* [algorithm](algorithm): 
 [二叉树](https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%8F%89%E6%A0%91)
 [二分查找](https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%88%86%E6%90%9C%E5%B0%8B%E6%BC%94%E7%AE%97%E6%B3%95)
 [红黑树](https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91)
@@ -57,7 +57,7 @@ Ubuntu
 apt-get install build-essential
 ```
 
-MacOS
+macOS
 ```
 brew install gcc
 brew install g++
@@ -85,14 +85,14 @@ sudo apt install clang-tidy
 
 ## 常用命令
 
-Ubuntu
+Ubuntu Linux
 ```
 ldd libso.so
 strace
 clang-tidy -list-checks
 ```
 
-MacOS
+macOS
 ```
 查看依赖库：otool -L libso.so
 查看so的导出函数：nm libso.so
@@ -109,6 +109,15 @@ MacOS
 
 # 参考资料
 
+书籍
+- [《C程序设计语言》](https://book.douban.com/subject/1139336/)，[K](https://zh.wikipedia.org/wiki/%E5%B8%83%E8%90%8A%E6%81%A9%C2%B7%E6%9F%AF%E6%9E%97%E6%BC%A2)&[R](https://zh.wikipedia.org/wiki/%E4%B8%B9%E5%B0%BC%E6%96%AF%C2%B7%E9%87%8C%E5%A5%87)，机械工业出版社，[维基百科](https://zh.wikipedia.org/wiki/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80_(%E4%B9%A6))
+- [《UNIX环境高级编程》](https://book.douban.com/subject/1788421/)，人民邮电出版社，APUE
+- [《C++编程思想》](https://book.douban.com/subject/1101524/)，机械工业出版社
+- [《C语言编程常见问题解答》](https://book.douban.com/subject/1247059/)，清华大学出版社
+- [《C专家编程》](https://book.douban.com/subject/2377310/)
+- [《TCP/IP详解》](https://book.douban.com/subject/1088054/)，机械工业出版社
+- [《The Elements of Programming Style》](https://book.douban.com/subject/1470267/)
+
 文档
 - [std::deque](https://en.cppreference.com/w/cpp/container/deque)
 - [automake](https://www.gnu.org/software/automake/manual/automake.html#true)
@@ -117,15 +126,6 @@ MacOS
 - [Autotools Tutorial](https://www.lrde.epita.fr/~adl/autotools.html)
 - [kqueue](https://www.freebsd.org/cgi/man.cgi?kqueue)
 - [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsuses)
-
-书籍
-- [《C程序设计语言》](https://book.douban.com/subject/1139336/)，[K](https://zh.wikipedia.org/wiki/%E5%B8%83%E8%90%8A%E6%81%A9%C2%B7%E6%9F%AF%E6%9E%97%E6%BC%A2)&[R](https://zh.wikipedia.org/wiki/%E4%B8%B9%E5%B0%BC%E6%96%AF%C2%B7%E9%87%8C%E5%A5%87)，机械工业出版社，本书背景信息见[维基百科](https://zh.wikipedia.org/wiki/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80_(%E4%B9%A6))
-- [《UNIX环境高级编程》](https://book.douban.com/subject/1788421/)，人民邮电出版社，APUE
-- [《C++编程思想》](https://book.douban.com/subject/1101524/)，机械工业出版社
-- [《C语言编程常见问题解答》](https://book.douban.com/subject/1247059/)，清华大学出版社
-- [《C专家编程》](https://book.douban.com/subject/2377310/)
-- [《TCP/IP详解》](https://book.douban.com/subject/1088054/)，机械工业出版社
-- [《The Elements of Programming Style》](https://book.douban.com/subject/1470267/)
 
 文章/帖子
 - [C/C++ 静态链接库(.a) 与 动态链接库(.so)](https://www.cnblogs.com/52php/p/5681711.html)
