@@ -4,7 +4,7 @@
 
 ## 目录说明
 
-* [history](history)：C语言发展简史，和相关的人物
+* [history](history.md)：C语言发展简史，和相关的人物
 * [C](C): 使用gcc编译的C语言基础学习代码
     * [base](C/base)：C语言基础(堆、栈、结构体)
     * [dynamic_link](C/dynamic_link): 动态链接
