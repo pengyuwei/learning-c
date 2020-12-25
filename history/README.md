@@ -30,14 +30,24 @@
 # 人物
 
 - Ken Thompson: 贝尔实验室的研究院，用汇编开发了最早的UNIX。创建了B语言。
-- Brian Kernighan: 将Thompson开发的系统命名为UNIX。K&R C作者。
+    - [story](https://www.youtube.com/watch?v=g3jOJfrOknA)
+- Brian Kernighan: 将Thompson开发的系统命名为UNIX。K&R C作者。dmr。
+    - [Homepage](https://www.cs.princeton.edu/~bwk/) [维基百科](https://zh.wikipedia.org/zh-hans/%E5%B8%83%E8%90%8A%E6%81%A9%C2%B7%E6%9F%AF%E6%9E%97%E6%BC%A2)
+    - 视频: [Brian Kernighan: UNIX, C, AWK, AMPL, and Go Programming](https://www.youtube.com/watch?v=O9upVbGSBFo)
+    - 视频: [Computer Science - Brian Kernighan on successful language](https://www.youtube.com/watch?v=Sg4U4r_AgJU)
+    - 视频: ["C" Programming Language: Brian Kernighan - Computerphile](https://www.youtube.com/watch?v=de2Hsvxaf8M)
+    - 视频: [Brian Kernighan Q&amp;A - Computerphile](https://www.youtube.com/watch?v=zmYhR8cUX90)
 - Dennis Ritchie: 创立了“New B”语言（C语言之前的名字）。K&R C作者。C语言之父和Unix之父。
-- Bjarne Stroustrup: C++之父。[Homepage](https://www.stroustrup.com/)
+    - [Homepage](https://www.bell-labs.com/usr/dmr/www/) [维基百科](https://zh.wikipedia.org/zh/%E4%B8%B9%E5%B0%BC%E6%96%AF%C2%B7%E9%87%8C%E5%A5%87)
+- Bjarne Stroustrup: C++之父。
+    - [Homepage](https://www.stroustrup.com/) [维基百科](https://zh.wikipedia.org/zh-hans/%E6%AF%94%E9%9B%85%E5%B0%BC%C2%B7%E6%96%AF%E7%89%B9%E5%8A%B3%E6%96%AF%E7%89%B9%E9%B2%81%E6%99%AE)
+    - 视频: [Bjarne Stroustrup: Why I Created C++](https://www.youtube.com/watch?v=JBjjnqG0BP8)
+    - 视频: [Bjarne Stroustrup - The Essence of C++](https://www.youtube.com/watch?v=86xWVb4XIyE)
 - Mike Lesk: 开发了C语言的可移植的I/O库函数。
 - Alan Snyder: C预处理器的倡议者。
 - Steve Bourne: 贝尔实验室工作，采用C预处理器使C语言更像Algol-68，这种C语言变形促成了异想天开的国际C语言混乱代码大赛。
 - Steve Johnson: 编写了可移植的C编译器pcc。
-- Richard Stallman: 创立自由软件基金会（Free Software Foundation，FSF，gcc来源于此），提出GNU方案，，MIT的顶级黑客。
+- Richard Stallman: 创立自由软件基金会（Free Software Foundation，FSF，gcc来源于此），提出GNU方案，MIT的顶级黑客。
 
 # 花絮
 
