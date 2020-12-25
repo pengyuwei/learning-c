@@ -30,7 +30,8 @@
 # 人物
 
 - Ken Thompson: 贝尔实验室的研究院，用汇编开发了最早的UNIX。创建了B语言。
-    - [story](https://www.youtube.com/watch?v=g3jOJfrOknA)
+    - [维基百科](https://zh.wikipedia.org/zh/%E8%82%AF%C2%B7%E6%B1%A4%E6%99%AE%E9%80%8A)
+    - 视频: [The Thompson and Ritchie Story](https://www.youtube.com/watch?v=g3jOJfrOknA)
 - Brian Kernighan: 将Thompson开发的系统命名为UNIX。K&R C作者。dmr。
     - [Homepage](https://www.cs.princeton.edu/~bwk/) [维基百科](https://zh.wikipedia.org/zh-hans/%E5%B8%83%E8%90%8A%E6%81%A9%C2%B7%E6%9F%AF%E6%9E%97%E6%BC%A2)
     - 视频: [Brian Kernighan: UNIX, C, AWK, AMPL, and Go Programming](https://www.youtube.com/watch?v=O9upVbGSBFo)
