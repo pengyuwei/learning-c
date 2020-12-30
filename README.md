@@ -136,4 +136,5 @@ macOS
 - [sockaddr和sockaddr_in详解](https://blog.csdn.net/will130/article/details/53326740)
 - [Linux IO模式及 select、poll、epoll详解](https://segmentfault.com/a/1190000003063859)
 
-
+视频
+- [2020 Pure C++大会](https://daxuepc.com/detail/l_5fe2f06de4b0231ba88e7586/4)
