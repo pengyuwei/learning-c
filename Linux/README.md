@@ -3,7 +3,7 @@
 - curses.c：Linux的终端界面库
 - epoll.c：Linux的可扩展I/O事件通知机制epoll模型
 - readline.c: ReadLine用法示例
-- 2038.c：32位Linux的2038年问题
+- 2038.c：32位Linux的[2038年问题](https://zh.wikipedia.org/wiki/2038%E5%B9%B4%E9%97%AE%E9%A2%98)
 
 ## 编译
 
@@ -63,3 +63,4 @@ read 或者 write 系统调用返回了 EAGAIN。
 * [libevent](https://zh.wikipedia.org/wiki/Libevent)
 * [I/O Completion Ports](https://zh.wikipedia.org/wiki/IOCP)
 * [newwin](https://linux.die.net/man/3/newwin)
+* [2000年问题](https://zh.wikipedia.org/wiki/2000%E5%B9%B4%E9%97%AE%E9%A2%98) [2038年问题](https://zh.wikipedia.org/wiki/2038%E5%B9%B4%E9%97%AE%E9%A2%98) [2033年问题](https://zh.wikipedia.org/wiki/2033%E5%B9%B4%E5%95%8F%E9%A1%8C) [置闰问题](https://zh.wikipedia.org/wiki/%E7%BD%AE%E9%97%B0)
