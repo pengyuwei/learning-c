@@ -3,8 +3,9 @@
 CC = gcc
 CFLAGS = -Wall -g -O0
 
-epoll: epoll.c
+linux: epoll.c 2038.c
 	$(CC) $(CFLAGS) epoll.c -o epoll.out
+	$(CC) -m32 2038.c -o 2038.out
 
 curses: curses.c
 	$(CC) $(CFLAGS) curses.c -lncurses -I/usr/include/ncurses -o curses.out
@@ -12,11 +13,11 @@ curses: curses.c
 readline: readline.c
 	$(CC) readline.c -lreadline -o readline.out
 
-other: 2038.c
-	$(CC) -m32 2038.c -o 2038.out
+other: fileio.c
+	$(CC) $(CFLAGS) fileio.c -o fileio.out
 
 .PHONY : all
-all : epoll curses readline
+all : linux curses readline other
 
 clean:
 	@rm -f *.out
