@@ -11,6 +11,15 @@ macOS不支持epoll，请在Linux编译;
 
 # [epoll](https://zh.wikipedia.org/wiki/Epoll)
 
+epoll IO多路复用的机制，nginx和redis等软件中都有应用，redis的性能好的原因之一也就是使用了epoll进行IO多路复用，同时epoll也是各大公司面试的热点
+int epoll_create(int size);
+int epoll_ctl(int epfd, int op, int fd, struct epoll_event *event);
+int epoll_wait(int epfd, struct epoll_event * events, int maxevents, int timeout);
+epoll_create创建一个句柄
+epoll_ctl向句柄中添加、删除或修改文件描述符
+epoll_wait对句柄进行监听，当有文件描述符准备就绪后，就会通过events参数返回。
+epoll内部使用红黑树来保存所有监听的文件描述符。
+
 ```维基百科
 epoll是Linux内核的可扩展I/O事件通知机制[1]。于Linux 2.5.44首度登场，它设计目的旨在取代既有POSIX select(2)与poll(2)系统函数，让需要大量操作文件描述符的程序得以发挥更优异的性能（举例来说：旧有的系统函数所花费的时间复杂度为O(n)，epoll的时间复杂度O(log n)）。epoll 实现的功能与 poll 类似，都是监听多个文件描述符上的事件。
 
