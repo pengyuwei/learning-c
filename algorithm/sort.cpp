@@ -2,6 +2,7 @@
 #include <assert.h>
 #include <stdlib.h>
 #include <sys/time.h>
+#include <ctime>
 
 // by zzj 2021-2-24
 
@@ -73,7 +74,7 @@ int main() {
 		merge_sort(A, B, C);
 	}
     long end = nowus();
-    printf("c merge_sort 1000 times spend %ld ns\n", end - begin);
+    printf("c_merge 1000 times spend %ld ns\n", end - begin);
 
 	dump(C, 2*N);
 }

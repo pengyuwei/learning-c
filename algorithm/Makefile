@@ -5,7 +5,7 @@ CXX = c++
 CFLAGS = -Wall -g
 
 base : sort.cpp bitcoin.c
-	$(CXX) $(CFLAGS) -DNDEBUG sort.cpp -o sort.out
+	$(CXX) $(CFLAGS) -DNDEBUG -D_GNU_SOURCE sort.cpp -o sort.out
 	$(CC) $(CFLAGS) bitcoin.c -o bitcoin.out
 	
 .PHONY : all

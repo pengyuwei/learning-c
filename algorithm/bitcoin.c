@@ -1,6 +1,7 @@
 #include <math.h>
 #include <stdio.h>
 
+// gcc v11.0
 double AttackerSuccessProbability(double q, int z)
 {
     double p = 1.0 - q;
