@@ -24,6 +24,7 @@ main.dSYM
 .deps
 
 .vs
+.vscode
 # Prerequisites
 *.d
 

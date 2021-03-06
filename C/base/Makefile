@@ -3,10 +3,11 @@
 CC = gcc
 CFLAGS = -Wall -g
 
-base : base.c heap.c stack.c
+base : base.c heap.c stack.c mem.c
 	$(CC) $(CFLAGS) base.c -o base.out
 	$(CC) $(CFLAGS) heap.c -o heap.out
 	$(CC) $(CFLAGS) stack.c -o stack.out
+	$(CC) $(CFLAGS) mem.c -o mem.out
 	
 .PHONY : all
 all : base
