@@ -83,12 +83,25 @@ Apple clang version 11.0.3 (clang-1103.0.32.62)
 sudo apt install clang-tidy
 ```
 
+## 名词概念
+
+- Clang: 一个由Apple主导编写，基于LLVM的C/C++/Objective-C编译器
+- llvm: Low Level Virtual Machine.先编译成中间代码，再编译为目标平台代码。早该这么玩。
+
+## 常用工具
+
+- doxygen: 文档生成工具，将程序中的特定注释转换成为文档
+- ldd: 查看依赖的共享库列表
+- clang-tidy: 基于clang的静态代码分析框架
+- strace: 调试工具，监控用户空间进程和内核的交互，比如系统调用、信号传递、进程状态变更等
+- ghidra: 逆向工具
+- ida pro: 逆向工具
+
 ## 常用命令
 
 Ubuntu Linux
 ```
 ldd libso.so
-strace
 clang-tidy -list-checks
 ```
 

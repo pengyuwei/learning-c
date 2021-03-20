@@ -25,6 +25,7 @@ main.dSYM
 
 .vs
 .vscode
+.DS_Store
 # Prerequisites
 *.d
 
