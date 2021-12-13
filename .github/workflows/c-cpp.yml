@@ -19,13 +19,14 @@ jobs:
         cd base;make all;make clean;cd ..;
         cd scope;make all;make clean;cd ..;
         cd socket;make all;make clean;cd ..;
+        cd bugcode;make;make clean;cd ..;
     - name: CPP
       run: |
         cd CPP;make;make clean;
         cd thread;make;make clean;cd ..;
         cd dynamic_link;make;make clean;cd ..;
         cd static_link;make;make clean;cd ..;
-        cd new;make;make clean;cd ..;
+        cd whatsnew;make;make clean;cd ..;
         cd stl;make;make clean;cd ..;
     - name: Linux
       run: |
