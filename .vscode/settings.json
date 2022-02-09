@@ -1,5 +1,16 @@
 {
     "files.associations": {
+        "[!.]": "markdown",
+        "[!.][!.]": "markdown",
+        "[!.][!.][!.]": "markdown",
+        "[!.][!.][!.][!.]": "markdown",
+        "[!.][!.][!.][!.][!.]": "markdown",
+        "[!.][!.][!.][!.][!.][!.]": "markdown",
+        "[!.][!.][!.][!.][!.][!.][!.]": "markdown",
+        "[!.][!.][!.][!.][!.][!.][!.][!.]": "markdown",
+        "[!.][!.][!.][!.][!.][!.][!.][!.][!.]": "markdown",
+        "[!.][!.][!.][!.][!.][!.][!.][!.][!.][!.]": "markdown",
+        "*.local": "bat",
         "algorithm": "cpp",
         "iostream": "cpp",
         "__bit_reference": "cpp",
@@ -61,6 +72,7 @@
         "typeinfo": "cpp",
         "unordered_map": "cpp",
         "utility": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "assert.h": "c"
     }
 }
