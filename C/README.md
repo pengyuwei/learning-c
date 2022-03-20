@@ -4,8 +4,10 @@
 1990年的国际混乱C大赛上，Diomides Spinellis用1500字节实现的BASIC语言解释器。
     * 源代码地址：http://grail.cba.csuohio.edu/~somos/ddsbasic.c
     * 测试代码：http://grail.cba.csuohio.edu/~somos/LANDER.BAS
+- [happytime/fire.c](happytime/fire.c)：终端字符火焰
+- happytime/mixedtype.c: C语言其实也像JS一样可以混合类型计算（恶搞）
 
-运行：
+basic解释器运行：
 ```
 gcc ddsbasic.c
 ./a.out
