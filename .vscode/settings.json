@@ -73,6 +73,7 @@
         "unordered_map": "cpp",
         "utility": "cpp",
         "vector": "cpp",
-        "assert.h": "c"
+        "assert.h": "c",
+        "stdio.h": "c"
     }
 }
