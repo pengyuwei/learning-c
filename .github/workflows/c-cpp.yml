@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - run: sudo apt install gcc-multilib
+    - run: sudo apt update;sudo apt install gcc-multilib
     - uses: actions/checkout@v2
     - name: C
       run: |
