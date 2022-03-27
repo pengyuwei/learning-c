@@ -83,6 +83,19 @@ Apple clang version 11.0.3 (clang-1103.0.32.62)
 sudo apt install clang-tidy
 ```
 
+如果需要在MacOS上使用gdb调试，[参考这里](https://opensource.apple.com/source/lldb/lldb-69/docs/code-signing.txt)
+先打开启动台>>其他>>钥匙串访问>>证书助理>>创建证书
+名称：gdb_codesign，类型：代码签名，覆盖默认值，证书位置为系统。创建后简介里选择始终信任。
+```
+sudo killall taskgated
+codesign -fs gdb_codesign $(which gdb)
+set startup-with-shell off
+sudo chgrp procmod $(which gdb)
+sudo chmod g+s $(which gdb)  # else u must use sudo gdb a.out
+# reboot
+sudo gdb a.out
+```
+
 ## 名词概念
 
 - Clang: 一个由Apple主导编写，基于LLVM的C/C++/Objective-C编译器
@@ -132,6 +145,7 @@ macOS
 - [《The Elements of Programming Style》](https://book.douban.com/subject/1470267/)
 
 文档
+- [GDB to LLDB command map](https://lldb.llvm.org/use/map.html)
 - [std::deque](https://en.cppreference.com/w/cpp/container/deque)
 - [automake](https://www.gnu.org/software/automake/manual/automake.html#true)
 - [C++ Standards Committee Papers](http://open-std.org/JTC1/SC22/WG21/docs/papers/)
@@ -141,6 +155,7 @@ macOS
 - [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsuses)
 
 文章/帖子
+- [开源软件指南](https://opensource.guide/zh-hans/)
 - [C/C++ 静态链接库(.a) 与 动态链接库(.so)](https://www.cnblogs.com/52php/p/5681711.html)
 - [Linux C/C++ 动态链接库的生成和调用](https://blog.csdn.net/alex_bean/article/details/83792988)
 - [C/C++ 的编译和链接的问题](https://zhuanlan.zhihu.com/p/26643194)

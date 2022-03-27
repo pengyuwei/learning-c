@@ -6,6 +6,7 @@ CFLAGS = -Wall -g -O0
 linux: epoll.c 2038.c
 	$(CC) $(CFLAGS) epoll.c -o epoll.out
 	$(CC) -m32 2038.c -o 2038.out
+	$(CC) $(CFLAGS) color.c -o color.out
 
 curses: curses.c
 	$(CC) $(CFLAGS) curses.c -lncurses -I/usr/include/ncurses -o curses.out
