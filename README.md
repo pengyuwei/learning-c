@@ -14,6 +14,13 @@ Join us; you can [give up GitHub](https://GiveUpGitHub.org) too!
 
 本项目是对 C 和 C++ 的复习。
 
+```
+千里之行始於足下
+The journey of a thousand miles begins with a single step.
+
+— 老子 (Lao Tsu) in Chapter 64 of 道德经 (Tao Te Ching)
+```
+
 ## 目录说明
 
 * [History](History.md)：C语言发展简史，和相关的人物
