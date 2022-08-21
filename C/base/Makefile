@@ -8,6 +8,8 @@ base : base.c heap.c stack.c mem.c
 	$(CC) $(CFLAGS) heap.c -o heap.out
 	$(CC) $(CFLAGS) stack.c -o stack.out
 	$(CC) $(CFLAGS) mem.c -o mem.out
+	$(CC) $(CFLAGS) rnd.c -o rnd.out
+	$(CC) $(CFLAGS) input.c -o input.out
 	
 .PHONY : all
 all : base
