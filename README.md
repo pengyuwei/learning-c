@@ -156,10 +156,12 @@ macOS
 
 书籍
 - [《C程序设计语言》](https://book.douban.com/subject/1139336/)，[K](https://zh.wikipedia.org/wiki/%E5%B8%83%E8%90%8A%E6%81%A9%C2%B7%E6%9F%AF%E6%9E%97%E6%BC%A2)&[R](https://zh.wikipedia.org/wiki/%E4%B8%B9%E5%B0%BC%E6%96%AF%C2%B7%E9%87%8C%E5%A5%87)，机械工业出版社，[维基百科](https://zh.wikipedia.org/wiki/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80_(%E4%B9%A6))
+- [《C和指针》](https://book.douban.com/subject/3012360/)
+- [《C专家编程》](https://book.douban.com/subject/2377310/)
+- [《C陷阱与缺陷》](https://book.douban.com/subject/2778632/)
 - [《UNIX环境高级编程》](https://book.douban.com/subject/1788421/)，人民邮电出版社，APUE
 - [《C++编程思想》](https://book.douban.com/subject/1101524/)，机械工业出版社
 - [《C语言编程常见问题解答》](https://book.douban.com/subject/1247059/)，清华大学出版社
-- [《C专家编程》](https://book.douban.com/subject/2377310/)
 - [《TCP/IP详解》](https://book.douban.com/subject/1088054/)，机械工业出版社
 - [《The Elements of Programming Style》](https://book.douban.com/subject/1470267/)
 
