@@ -1,15 +1,3 @@
-# Give Up GitHub
-
-This project has given up GitHub.  ([See Software Freedom Conservancy's *Give Up  GitHub* site for details](https://GiveUpGitHub.org).)
-
-You can now find this project at [INSERT-URL-OR-DESCRIPTION](INSERT-URL) instead.
-
-Any use of this project's code by GitHub Copilot, past or present, is done without our permission.  We do not consent to GitHub's use of this project's code in Copilot.
-
-Join us; you can [give up GitHub](https://GiveUpGitHub.org) too!
-
-![Logo of the GiveUpGitHub campaign](https://sfconservancy.org/img/GiveUpGitHub.png)
-
 # learning-c
 
 本项目是对 C 和 C++ 的复习。
@@ -118,7 +106,7 @@ sudo gdb a.out
 ## 名词概念
 
 - Clang: 一个由Apple主导编写，基于LLVM的C/C++/Objective-C编译器
-- llvm: Low Level Virtual Machine.先编译成中间代码，再编译为目标平台代码。早该这么玩。
+- llvm: Low Level Virtual Machine.先编译成中间代码，再编译为目标平台代码。
 
 ## 常用工具
 
