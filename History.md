@@ -27,6 +27,15 @@
 - C: “New B”语言，同时也是 BCPL 语言的第二个字母，1972年
 - C++: “C with Classes”语言，1979年
 
+# C++标准演化历史（简单版）
+
+1. 1998: C++98，第一个C++标准
+2. 2003: C++03
+3. 2011: C++11，[Detail](https://zh.wikipedia.org/zh-cn/C%2B%2B11)
+4. 2014: C++14
+5. 2017: C++17
+6. 2020: C++20，[Detail](https://zh.wikipedia.org/wiki/C%2B%2B20)
+
 # 人物
 
 - Ken Thompson: 贝尔实验室的研究院，用汇编开发了最早的UNIX。创建了B语言。
