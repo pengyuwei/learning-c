@@ -1,6 +1,6 @@
 # learning-c
 
-本项目是对 C 和 C++ 的复习。
+本项目是对 C 和 C++ 的复习和持续学习。
 
 ```
 千里之行始於足下
@@ -45,17 +45,6 @@ The journey of a thousand miles begins with a single step.
     * MongoDB
 * [FreeBSD](FreeBSD)：FreeBSD系统特性
     * kqueue
-* [algorithm](algorithm): 
-[二叉树](https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%8F%89%E6%A0%91)
-[二分查找](https://zh.wikipedia.org/wiki/%E4%BA%8C%E5%88%86%E6%90%9C%E5%B0%8B%E6%BC%94%E7%AE%97%E6%B3%95)
-[红黑树](https://zh.wikipedia.org/wiki/%E7%BA%A2%E9%BB%91%E6%A0%91)
-[B树](https://zh.wikipedia.org/wiki/B%E6%A0%91)
-[冒泡排序](https://zh.wikipedia.org/wiki/%E5%86%92%E6%B3%A1%E6%8E%92%E5%BA%8F)
-[快速排序](https://zh.wikipedia.org/wiki/%E5%BF%AB%E9%80%9F%E6%8E%92%E5%BA%8F)
-[插入排序](https://zh.wikipedia.org/wiki/%E6%8F%92%E5%85%A5%E6%8E%92%E5%BA%8F)
-[归并排序](https://zh.wikipedia.org/wiki/%E5%BD%92%E5%B9%B6%E6%8E%92%E5%BA%8F)
-[选择排序](https://zh.wikipedia.org/wiki/%E9%80%89%E6%8B%A9%E6%8E%92%E5%BA%8F)
-[A*寻路](https://zh.wikipedia.org/wiki/A*%E6%90%9C%E5%B0%8B%E6%BC%94%E7%AE%97%E6%B3%95)
 
 ## 编译环境
 
@@ -140,9 +129,10 @@ macOS
 .github/workflows/c-cpp.yml
 ```
 
-# 参考资料
+# Reference
 
-书籍
+Book
+
 - [《C程序设计语言》](https://book.douban.com/subject/1139336/)，[K](https://zh.wikipedia.org/wiki/%E5%B8%83%E8%90%8A%E6%81%A9%C2%B7%E6%9F%AF%E6%9E%97%E6%BC%A2)&[R](https://zh.wikipedia.org/wiki/%E4%B8%B9%E5%B0%BC%E6%96%AF%C2%B7%E9%87%8C%E5%A5%87)，机械工业出版社，[维基百科](https://zh.wikipedia.org/wiki/C%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E8%AF%AD%E8%A8%80_(%E4%B9%A6))
 - [《C和指针》](https://book.douban.com/subject/3012360/)
 - [《C专家编程》](https://book.douban.com/subject/2377310/)
@@ -153,7 +143,8 @@ macOS
 - [《TCP/IP详解》](https://book.douban.com/subject/1088054/)，机械工业出版社
 - [《The Elements of Programming Style》](https://book.douban.com/subject/1470267/)
 
-文档
+Document
+
 - [GDB to LLDB command map](https://lldb.llvm.org/use/map.html)
 - [std::deque](https://en.cppreference.com/w/cpp/container/deque)
 - [automake](https://www.gnu.org/software/automake/manual/automake.html#true)
@@ -163,7 +154,8 @@ macOS
 - [kqueue](https://www.freebsd.org/cgi/man.cgi?kqueue)
 - [Workflow syntax for GitHub Actions](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#jobsjob_idstepsuses)
 
-文章/帖子
+Article
+
 - [开源软件指南](https://opensource.guide/zh-hans/)
 - [C/C++ 静态链接库(.a) 与 动态链接库(.so)](https://www.cnblogs.com/52php/p/5681711.html)
 - [Linux C/C++ 动态链接库的生成和调用](https://blog.csdn.net/alex_bean/article/details/83792988)
@@ -173,29 +165,8 @@ macOS
 - [sockaddr和sockaddr_in详解](https://blog.csdn.net/will130/article/details/53326740)
 - [Linux IO模式及 select、poll、epoll详解](https://segmentfault.com/a/1190000003063859)
 
-视频
-- [2020 Pure C++大会](https://daxuepc.com/detail/l_5fe2f06de4b0231ba88e7586/4)
+Conference
 
+- [Cppcon](https://cppcon.org/) :C++社区组织的年度聚会
+- [2020 Pure C++大会](https://daxuepc.com/detail/l_5fe2f06de4b0231ba88e7586/4):purecpp开源社区和腾讯主办的大会
 
-== We're Using GitHub Under Protest ==
-
-This project is currently hosted on GitHub.  This is not ideal; GitHub is a
-proprietary, trade-secret system that is not Free and Open Souce Software
-(FOSS).  We are deeply concerned about using a proprietary system like GitHub
-to develop our FOSS project.  We have an
-[open {bug ticket, mailing list thread, etc.} ](INSERT_LINK) where the
-project contributors are actively discussing how we can move away from GitHub
-in the long term.  We urge you to read about the
-[Give up GitHub](https://GiveUpGitHub.org) campaign from
-[the Software Freedom Conservancy](https://sfconservancy.org) to understand
-some of the reasons why GitHub is not a good place to host FOSS projects.
-
-If you are a contributor who personally has already quit using GitHub, please
-[check this resource](INSERT_LINK) for how to send us contributions without
-using GitHub directly.
-
-Any use of this project's code by GitHub Copilot, past or present, is done
-without our permission.  We do not consent to GitHub's use of this project's
-code in Copilot.
-
-![Logo of the GiveUpGitHub campaign](https://sfconservancy.org/img/GiveUpGitHub.png)
