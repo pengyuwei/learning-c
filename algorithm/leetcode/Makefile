@@ -12,6 +12,9 @@ all : base
 run:
 	./1.out
 
+upload:
+	scp * ff@build-server:~/build/
+
 clean:
 	@rm -f *.o
 	@rm -f *.out

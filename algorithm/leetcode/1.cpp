@@ -19,16 +19,18 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 */
 
+#include <stdio.h>
 #include <vector>
+#include <assert.h>
 using namespace std;
 
 class Solution {
     public:
     vector<int> twoSum(vector<int>& nums, int target) {
         vector<int> ret;
-        for (int i = 0; i < nums.size(); i++) {
+        for (size_t i = 0; i < nums.size(); i++) {
             int a = nums[i];
-            for (int j = 0; j < nums.size(); j++) {
+            for (size_t j = 0; j < nums.size(); j++) {
                 if (j == i) {
                     continue;
                 }
@@ -46,7 +48,7 @@ class Solution {
 
 void show(vector<int> nums) {
     static int count = 0;
-    for (int i = 0; i < nums.size(); i++) {
+    for (size_t i = 0; i < nums.size(); i++) {
         printf("%d. %d\n", count, nums[i]);
     }
     count++;
