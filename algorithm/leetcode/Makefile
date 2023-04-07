@@ -2,10 +2,10 @@
 
 CC = gcc
 CXX = c++
-CFLAGS = -Wall -g
+CFLAGS = -Wall -g -std=c++11
 
 base : 1.cpp
-	$(CXX) $(CFLAGS) -DNDEBUG 1.cpp -o 1.out
+	$(CXX) $(CFLAGS) 1.cpp -o 1.out
 	
 .PHONY : all
 all : base

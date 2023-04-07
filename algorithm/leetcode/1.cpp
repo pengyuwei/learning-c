@@ -39,21 +39,33 @@ public:
     }
 };
 
+void show(vector<int> nums) {
+    for (int i = 0; i < nums.size(); i++) {
+        printf("%d\n", nums[i]);
+    }
+}
+
 int main() {
     Solution s;
     vector<int> nums;
     vector<int> ret;
 
-    nums.push_back(2);
-    nums.push_back(7);
-    nums.push_back(11);
-    nums.push_back(5);
-    
+    nums.insert(nums.end(), {2, 7, 11, 5});
     ret = s.twoSum(nums, 9);
-    for (int i = 0; i < ret.size(); i++)
-    {
-        printf("%d\n", ret[i]);
-    }
+    assert(ret[0] == 0);
+    assert(ret[1] == 1);
+
+    nums.clear();ret.clear();
+    nums.insert(nums.end(), {3, 2, 4});
+    ret = s.twoSum(nums, 6);
+    assert(ret[0] == 1);
+    assert(ret[1] == 2);
+
+    nums.clear();ret.clear();
+    nums.insert(nums.end(), {3, 3});
+    ret = s.twoSum(nums, 6);
+    assert(ret[0] == 0);
+    assert(ret[1] == 1);
     
     return 0;
 }
