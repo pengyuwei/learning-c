@@ -41,7 +41,7 @@ jobs:
     - name: autotools
       run: cd autotools;sh ./make.sh;sh clean.sh;cd ..;
     - name: algorithm
-      run: cd algorithm;make;make run;make clean;cd ..;
+      run: cd algorithm/leetcode;make;make run;make clean;cd ../..;
     # - name: make check
     #   run: make check
     # - name: make distcheck
