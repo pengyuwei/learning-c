@@ -1,0 +1,19 @@
+.DEFAULT_GOAL := all
+
+CC = gcc
+CXX = c++
+CFLAGS = -Wall -g
+
+base : 1.cpp
+	$(CXX) $(CFLAGS) -DNDEBUG 1.cpp -o 1.out
+	
+.PHONY : all
+all : base
+
+run:
+	./1.out
+
+clean:
+	@rm -f *.o
+	@rm -f *.out
+	@rm -rf *.out.*
