@@ -45,7 +45,7 @@ void show(vector<int> nums) {
     }
 }
 
-int main() {
+void test_case() {
     Solution s;
     vector<int> nums;
     vector<int> ret;
@@ -66,6 +66,9 @@ int main() {
     ret = s.twoSum(nums, 6);
     assert(ret[0] == 0);
     assert(ret[1] == 1);
-    
+}
+
+int main() {
+    test_case();
     return 0;
 }
