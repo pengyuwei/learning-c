@@ -1,10 +1,10 @@
 /*
 1. Two Sum
 https://leetcode.com/problems/two-sum/
-Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-You may assume that each input would have exactly one solution, and you may not use the same element twice.
-You can return the answer in any order.
-Example 1:
+Given an array of integers nums and an integer target, return indices of the two
+numbers such that they add up to target. You may assume that each input would
+have exactly one solution, and you may not use the same element twice. You can
+return the answer in any order. Example 1:
 
 Input: nums = [2,7,11,15], target = 9
 Output: [0,1]
@@ -23,16 +23,21 @@ Output: [0,1]
 using namespace std;
 
 class Solution {
-public:
+    public:
     vector<int> twoSum(vector<int>& nums, int target) {
         vector<int> ret;
-        for (int i=0;i<nums.size() - 1;i++) {
+        for (int i = 0; i < nums.size(); i++) {
             int a = nums[i];
-            int b = nums[i+1];
-            if (a + b == target) {
-                ret.push_back(i);
-                ret.push_back(i+1);
-                return ret;
+            for (int j = 0; j < nums.size(); j++) {
+                if (j == i) {
+                    continue;
+                }
+                int b = nums[j];
+                if (a + b == target) {
+                    ret.push_back(i);
+                    ret.push_back(j);
+                    return ret;
+                }
             }
         }
         return ret;
@@ -40,9 +45,11 @@ public:
 };
 
 void show(vector<int> nums) {
+    static int count = 0;
     for (int i = 0; i < nums.size(); i++) {
-        printf("%d\n", nums[i]);
+        printf("%d. %d\n", count, nums[i]);
     }
+    count++;
 }
 
 void test_case() {
@@ -59,6 +66,12 @@ void test_case() {
     nums.insert(nums.end(), {3, 2, 4});
     ret = s.twoSum(nums, 6);
     assert(ret[0] == 1);
+    assert(ret[1] == 2);
+
+    nums.clear();ret.clear();
+    nums.insert(nums.end(), {3, 2, 3});
+    ret = s.twoSum(nums, 6);
+    assert(ret[0] == 0);
     assert(ret[1] == 2);
 
     nums.clear();ret.clear();

@@ -1,6 +1,5 @@
 .DEFAULT_GOAL := all
 
-CC = gcc
 CXX = c++
 CFLAGS = -Wall -g -std=c++11
 
