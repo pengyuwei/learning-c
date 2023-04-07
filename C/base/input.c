@@ -19,7 +19,7 @@ void test_scanf() {
     scanf("%5s",content);
     printf("%s\n", content);
 
-    return 0;
+    return;
 }
 
 void test_getc() {

@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <assert.h>
 
 /* 不要添乱，立即解散ISO工作小组 -- 匿名人士 */
 
@@ -92,6 +93,10 @@ void func_var() {
         // -1 自动转换为无符号数字
         KR_C printf("K&C C: %d\n", (unsigned char)1);
     }
+
+    char vc1 = 127; // -128~127 (1 Byte)
+    unsigned char vc2 = 127; // 0~255 (1 Byte)
+    assert(vc1 == vc2);
 }
 
 int main(int argc, char *argv[])

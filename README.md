@@ -9,7 +9,7 @@ The journey of a thousand miles begins with a single step.
 — 老子 (Lao Tsu) in Chapter 64 of 道德经 (Tao Te Ching)
 ```
 
-## 目录说明
+## 目录
 
 * [History](History.md)：C语言发展简史，和相关的人物
 * [C](C): 使用gcc编译的C语言基础学习代码
@@ -19,9 +19,6 @@ The journey of a thousand miles begins with a single step.
     * [scope](C/scope): 变量作用域
     * [data_struct](C/data_struct): 数组、链表、堆栈、队列、哈希表、排序、字节顺序、位运算
     * [socket](C/socket): Socket通讯、进程间通讯、共享内存通讯
-    * [woqu](C/woqu)
-        * [tunjinkaotang](C/basic/tunjinkaotang): “屯斤拷烫”这个梗的来源演示。
-        * [basic](C/woqu/basic)：1990年的国际混乱C大赛上，Diomides Spinellis用1500字节实现的BASIC语言解释器。
 * [CPP](CPP): 使用g++编译的C++语言基础学习代码
     * [class](CPP/class)：类(类、继承、重载、多态)
     * [dynamic_link](CPP/dynamic_link): C++调用C的动态链接库
@@ -45,6 +42,10 @@ The journey of a thousand miles begins with a single step.
     * MongoDB
 * [FreeBSD](FreeBSD)：FreeBSD系统特性
     * kqueue
+* [happytime](happytime)
+    * [tunjinkaotang](happytime/tunjinkaotang): “屯斤拷烫”这个梗的来源演示。
+    * [basic](happytime/basic)：1990年的国际混乱C大赛上，Diomides Spinellis用1500字节实现的BASIC语言解释器。
+    * [numhome](happytime/numhole/)：数字黑洞
 
 ## 编译环境
 
@@ -90,6 +91,15 @@ sudo chgrp procmod $(which gdb)
 sudo chmod g+s $(which gdb)  # else u must use sudo gdb a.out
 # reboot
 sudo gdb a.out
+```
+
+## llvm
+
+```
+brew install llvm
+clang test.c -o test
+clang -O1 -emit-llvm test.c -c -o test.bc
+lli test.bc
 ```
 
 ## 名词概念
