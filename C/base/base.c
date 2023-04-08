@@ -1,7 +1,9 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include <limits.h>
 #include <assert.h>
+
 
 /* 不要添乱，立即解散ISO工作小组 -- 匿名人士 */
 
@@ -55,6 +57,15 @@ ANSI_C int func2(int para);
 ANSI_C int func2(int para)
 {
     return para + 1;
+}
+
+void max_var() {
+    int intmax = INT_MAX; // 2147483647
+    long longmax = LONG_MAX; // 9223372036854775807
+    long long longlongmax = LLONG_MAX; // 9223372036854775807
+    printf("intmax=%d\n", intmax);
+    printf("longmax=%ld\n", longmax);
+    printf("longlongmax=%lld\n", longlongmax);
 }
 
 void func_const(const int readonly) {
@@ -125,6 +136,8 @@ int main(int argc, char *argv[])
     func_const(var);
 
     func_var();
+
+    max_var();
     
     // end
     return 0;

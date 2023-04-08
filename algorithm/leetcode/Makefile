@@ -5,6 +5,7 @@ CFLAGS = -Wall -g -std=c++11
 
 base : 1.cpp
 	$(CXX) $(CFLAGS) 1.cpp -o 1.out
+	$(CXX) $(CFLAGS) 2.cpp -o 2.out
 	
 .PHONY : all
 all : base
