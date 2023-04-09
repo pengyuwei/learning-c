@@ -30,7 +30,7 @@ s consists of English letters, digits, symbols and spaces.
 
 Accepted 4.4M Submissions 13M Acceptance Rate 33.8%
 */
-#include <stdio.h>
+#include <cstdio>
 #include <vector>
 #include <string>
 #include <algorithm>

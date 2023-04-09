@@ -21,7 +21,7 @@ Input: nums = [3,3], target = 6
 Output: [0,1]
 */
 
-#include <stdio.h>
+#include <cstdio>
 #include <vector>
 #include <assert.h>
 using namespace std;

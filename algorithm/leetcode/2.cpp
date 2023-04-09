@@ -27,7 +27,7 @@ It is guaranteed that the list represents a number that does not have leading ze
 */
 
 #include <cstddef>
-#include <stdio.h>
+#include <cstdio>
 #include <vector>
 #include <assert.h>
 
