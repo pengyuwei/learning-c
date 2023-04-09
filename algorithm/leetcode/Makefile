@@ -1,17 +1,21 @@
-.DEFAULT_GOAL := all
+.DEFAULT_GOAL := base
 
 CXX = c++
 CFLAGS = -Wall -g -std=c++11
 
-base : 1.cpp
+base : 3.cpp
+	$(CXX) $(CFLAGS) 3.cpp -o 3.out
+
+buildall : 1.cpp 3.cpp
 	$(CXX) $(CFLAGS) 1.cpp -o 1.out
 	$(CXX) $(CFLAGS) 2.cpp -o 2.out
-	
-.PHONY : all
-all : base
+	$(CXX) $(CFLAGS) 3.cpp -o 3.out
+
+.PHONY : base
+all : buildall
 
 run:
-	./1.out
+	./3.out
 
 upload:
 	scp * ff@build-server:~/build/

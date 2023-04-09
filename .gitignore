@@ -26,6 +26,7 @@ main.dSYM
 .vs
 .vscode
 .DS_Store
+.vscode/settings.json
 # Prerequisites
 *.d
 
