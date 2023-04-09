@@ -1,6 +1,7 @@
 /*
 2. Add Two Numbers
 https://leetcode.com/problems/add-two-numbers/
+Rank 3,684,591
 
 You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
@@ -199,7 +200,7 @@ void test_case4() {
     ListNode *node2 = new ListNode(); 
     struct ListNode *node = NULL;
 
-    printf("-------- test_case3 ------------\n");
+    printf("-------- test_case4 ------------\n");
     s.initNode(node1, {9,9,9,9,9,9,9,9,9,9});
     s.initNode(node2, {9,9,9,9});
     assert(s.getReverseNum(node1) == 9999999999);
