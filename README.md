@@ -36,12 +36,10 @@ The journey of a thousand miles begins with a single step.
     * epoll
     * lock-free
     * [2038](Linux/2038.c)：32位Linux的2038年问题
-* DB：数据库和缓存
-    * MySQL
-    * Redis
-    * MongoDB
 * [FreeBSD](FreeBSD)：FreeBSD系统特性
     * kqueue
+* [algorithm](algorithm): 算法
+    * [leetcode](algorithm/leetcode/): leetcode刷题
 * [happytime](happytime)
     * [tunjinkaotang](happytime/tunjinkaotang): “屯斤拷烫”这个梗的来源演示。
     * [basic](happytime/basic)：1990年的国际混乱C大赛上，Diomides Spinellis用1500字节实现的BASIC语言解释器。
@@ -71,13 +69,18 @@ pkg install gdb
 ```
 % gcc --version
 Apple clang version 11.0.3 (clang-1103.0.32.62)
+gcc (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0
 % c++ --version
 Apple clang version 11.0.3 (clang-1103.0.32.62)
+c++ (Ubuntu 11.3.0-1ubuntu1~22.04) 11.3.0
 ```
 
-其他扩展环境：
+其他工具：
 ```
 sudo apt install clang-tidy
+# 内存泄漏检查
+sudo apt install valgrind
+valgrind --tool=memcheck -s ./a.out
 ```
 
 如果需要在MacOS上使用gdb调试，[参考这里](https://opensource.apple.com/source/lldb/lldb-69/docs/code-signing.txt)
