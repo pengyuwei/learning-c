@@ -18,8 +18,9 @@ The journey of a thousand miles begins with a single step.
     * [static_link](C/static_link): 静态链接
     * [scope](C/scope): 变量作用域
     * [data_struct](C/data_struct): 数组、链表、堆栈、队列、哈希表、排序、字节顺序、位运算
-    * [socket](C/socket): Socket通讯
+    * [io](C/io): 阻塞IO、异步IO和并发IO
     * [ipc](C/ipc): 进程间通讯(管道、共享内存、信号、消息队列、命名管道)
+    * [socket](C/socket): Socket通讯
 * [CPP](CPP): 使用g++编译的C++语言基础学习代码
     * [class](CPP/class)：类(类、继承、重载、多态)
     * [dynamic_link](CPP/dynamic_link): C++调用C的动态链接库
