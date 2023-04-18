@@ -13,7 +13,14 @@ int main() {
     int opt = 1;
     int addrlen = sizeof(address);
     char buffer[1024] = {0};
-    const char *msg = "Hello from server!";
+    const char *msg = "HTTP/1.1 200 OK\r\n"
+        "Connection: keep-alive\r\n"
+        "Content-Type: text/html\r\n"
+        "Date: Tue, 18 Apr 2023 08:32:21 GMT\r\n"
+        "Server: bfe/1.0.8.18\r\n"
+        "\r\n"
+        "<!DOCTYPE html>\r\n"
+        "<!--STATUS OK--><html>\r\n<head><meta http-equiv=content-type content=text/html;charset=utf-8><title>io</title></head>\n<body>Hello</body></html>\r\n";
 
     if ((server_fd = socket(AF_INET, SOCK_STREAM, 0)) == 0) {
         perror("Socket creation failed.");
@@ -41,23 +48,21 @@ int main() {
 
     printf("Waiting for a connection at %d...\n", PORT);
 
-    if ((socket_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0) {
-        perror("Accept failed.");
-        exit(EXIT_FAILURE);
+    while (1) {
+        if ((socket_fd = accept(server_fd, (struct sockaddr *)&address, (socklen_t *)&addrlen)) < 0) {
+            perror("Accept failed.");
+            exit(EXIT_FAILURE);
+        }
+
+        read(socket_fd, buffer, 1024);
+
+        send(socket_fd, msg, strlen(msg), 0);
+
+        close(socket_fd);
+        socket_fd = 0;
     }
 
-    printf("Connection established.\n");
-
-    send(socket_fd, msg, strlen(msg), 0);
-
-    int valread = read(socket_fd, buffer, 1024);
-    printf("Received %d bytes: %s\n", valread, buffer);
-
-    send(socket_fd, msg, strlen(msg), 0);
-
-    close(socket_fd);
     close(server_fd);
-    socket_fd = 0;
     server_fd = 0;
 
     return 0;

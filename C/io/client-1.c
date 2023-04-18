@@ -47,8 +47,14 @@ int main(int argc, char *argv[]) {
     printf("Connected to %s:%s\n", argv[1], argv[2]);
 
     // send data
-    strcpy(buffer, "Hello");
+    strcpy(buffer, "GET / HTTP/1.1\r\n"
+            "Host: www.memcd.com\r\n"
+            "User-Agent: client.c\r\n"
+            "Accept: */*\r\n");
     send(client_fd, buffer, strlen(buffer), 0);
+
+    int len = read(client_fd, buffer, 1024);
+    printf("Received %d bytes: %s\n", len, buffer);
 
     close(client_fd);
 

@@ -12,10 +12,32 @@
 1. 安装AB测试工具: `sudo apt-get install apache2-utils`
 2. 查看系统的最大进程数限制: `cat /proc/sys/kernel/pid_max`
 
-## 测试
+测试环境
 
 - Server: Intel(R) Xeon(R) Platinum 8269CY CPU @ 2.50GHz 1Core 1G Free=104M 带宽1Mbps
 - Client: MacBookAir 1.1GHz Intel i5 4Core 8GB
+
+## Test-1
+
+```
+$ ./server-1.out 8888
+```
+
+```
+ab -n 1000 -c 1 http://<公网IP>:8888/
+Concurrency Level:      1
+Time taken for tests:   9.758 seconds
+Complete requests:      100
+Failed requests:        0
+Total transferred:      28800 bytes
+HTML transferred:       16100 bytes
+Requests per second:    10.25 [#/sec] (mean)
+Time per request:       97.578 [ms] (mean)
+Time per request:       97.578 [ms] (mean, across all concurrent requests)
+Transfer rate:          2.88 [Kbytes/sec] received
+```
+
+## Test-2
 
 ```
 $ ./server-2.out 8888
@@ -63,6 +85,16 @@ Time per request:       15.840 [ms] (mean, across all concurrent requests)
 Transfer rate:          17.76 [Kbytes/sec] received
 ```
 
+## 横向对比
+
+| server | client         | 总耗时     | 平均每秒处理的请求量 | 每个请求的平均处理时间ms | 每个请求的平均处理时间ms(并发) | 传输速率KB/s |
+| ------ | -------------- | ------- | ---------- | ------------- | ----------------- | -------- |
+| 1.顺序处理 | -n 1000 -c 1   | 9.758s  | 10.25s     | 97.578        | 97.578            | 2.88     |
+| 2.独立进程 | -n 1000 -c 1   | 101.885 | 9.81s      | 101.885       | 101.885           | 2.76     |
+|        | -n 500 -c 10   | 5.933   | 84.28      | 118.658       | 11.866            | 23.70    |
+|        | -n 1000 -c 100 | 15.840  | 63.13      | 1584.046      | 15.840            | 17.76    |
+
+
 ## 三种IO模型
 
 - 阻塞IO（Blocking IO）
@@ -72,7 +104,7 @@ Transfer rate:          17.76 [Kbytes/sec] received
 ## 解释
 
 - Concurrency Level：并发数；
-- Time taken for tests：测试总共耗时；
+- Time taken for tests：测试总耗时；
 - Complete requests：完成的请求数量；
 - Failed requests：失败的请求数量；
 - Requests per second：平均每秒处理的请求数量；
