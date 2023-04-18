@@ -3,7 +3,7 @@
 CC = gcc
 CFLAGS = -Wall -g
 
-ipc:
+io:
 	$(CC) $(CFLAGS) blocking_io.c -o blocking_io.out
 	$(CC) $(CFLAGS) server-1.c -o server-1.out
 	$(CC) $(CFLAGS) server-2.c -o server-2.out
@@ -11,7 +11,7 @@ ipc:
 	$(CC) $(CFLAGS) client-2.c -o client-2.out
 
 .PHONY : all
-all : ipc
+all : io
 
 upload:
 	scp * ff@build-server:~/build/
