@@ -2,7 +2,7 @@
 
 CC = gcc
 CXX = g++
-CFLAGS = -WALL -g -O0
+CFLAGS = -Wall -g -O2
 
 overload : class.cpp overload.cpp
 	$(CXX) class.cpp overload.cpp -o overload.out
@@ -10,9 +10,13 @@ overload : class.cpp overload.cpp
 
 main : class.cpp
 	$(CXX) class.cpp -D_CLASSMAIN_ -o class.out
+	$(CXX) $(CFLAGS) explicit.cpp -o explicit.out
 
 .PHONY : all
 all : main overload
+
+upload:
+	scp * ff@build-server:~/build/
 
 clean:
 	@rm -f *.out

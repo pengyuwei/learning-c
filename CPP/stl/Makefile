@@ -15,4 +15,6 @@ stl : stl.cpp
 all : stl
 
 clean:
+	@rm -f *.o
 	@rm -f *.out
+	@rm -rf *.out.*
