@@ -29,7 +29,7 @@ The journey of a thousand miles begins with a single step.
     * [stl](CPP/stl): C++ STL标准库
     * [whatsnew](CPP/whatsnew): C++语言新特性（v11-20）
     * [book](CPP/book/): 读书笔记
-      * [book](CPP/book/concurrency/): C++并发编程读书笔记
+      * [《C++并发编程》](CPP/book/concurrency/): 《C++并发编程》读书笔记
 * [autotools](autotools): 包含autoconf和automake的用法示例
 * [lib](lib)：一些库
     * [sdl](lib/sdl): C++ SDL图形库

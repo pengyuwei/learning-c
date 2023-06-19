@@ -13,8 +13,9 @@ public:
             t.join();
         }
     }
-    thread_guard(thread_guard const&)=delete;
-    thread_guard& operator=(thread_guard const&)=delete;
+    // 这里把拷贝构造函数和等号运算符声明为删除函数，防止编译器自动生成这两个函数而导致不可预测的行为
+    thread_guard(thread_guard const&) = delete;
+    thread_guard& operator=(thread_guard const&) = delete;
 };
 
 void do_something(int& i) {
