@@ -3,6 +3,9 @@
 CC = gcc
 CFLAGS = -Wall -g
 
+define:
+	@$(CC) $(CFLAGS) -Wno-unused-variable def.c -o def.out
+
 base : base.c heap.c stack.c mem.c
 	$(CC) $(CFLAGS) base.c -o base.out
 	$(CC) $(CFLAGS) heap.c -o heap.out
